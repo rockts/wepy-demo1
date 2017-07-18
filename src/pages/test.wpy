@@ -1,0 +1,16 @@
+
+// wepy
+<!-- /components/item.wpy -->
+ <text>{{text}}</text>
+
+<!-- index.wpy -->
+<template>
+    <component id="item"></component>
+</template>
+<script>
+    import wepy from 'wepy';
+    import Item from '../components/item';
+    export default class Index extends wepy.page {
+        components = { Item }
+    }
+</script>
